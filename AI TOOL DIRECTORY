@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>my project</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=head, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><b><big><pre>                                                                          THE AI TOOL DIRECTORY             </pre></big><b></b>   
+    <img src = "https://itbrief.com.au/uploads/story/2023/11/27/img-d320oqYWscvU8q8HLX0brOyX.webp"height = "400" width = 1500 alt = "LOGO>"
+    <br>
+    <h3> <pre>All you find is AI tools </pre></h3>
+    <h4><pre><b>SAVE YOUR TIME</b></pre></h4>
+    </header>
+
+    <main>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYKcZywHQXjabKQwdBc1GAls5SKqpckLDcRuxZ4J8gQ&s=10" alt  = "gpt logo">
+        <table>
+            <tr>
+                <th>Name </th>
+                <th><pre>        availiability</pre></th>
+                <th>link</th>
+            </tr>
+            <tr>
+                <td>CHATGPT</td>
+                <td>free/paid</td>
+                <td><a href ="https://chatgpt.com/?utm_source=chatgpt.com" "target="main">link</a></td>
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0j7J3W-RY2NuQPmgIXvZ_IK9VeF4AGXm9yZYzieF7Uw&s=10" width = "400" alt = "gemini"></a>
+            <td>GEMINI</td>
+            <td>free/paid</td>
+            <td><a href = "https://gemini.google.com/app" target="_blank">link</a></td>
+            </tr>
+            
+        </table>
+    </main>
+    
+
+</body>
+</html>
