@@ -1,0 +1,26 @@
+import java.util.*;
+class pref{
+    public static void main(String[] args) {
+        //System.out.println("Start small. Ship something.");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of an array");
+        int n = sc.nextInt();
+        int[] array = new int[n];
+        System.out.println("Enter the elements");
+        for(int i = 0; i<array.length; i++){
+            array[i] = sc.nextInt();
+        }
+        int[] pref = new int[array.length];
+        pref[0] = array[0];
+        for(int i=1;i<array.length;i++){
+            pref[i] = pref[i-1]+array[i];
+        }
+        System.out.println("The prefix sum of the array is :")
+        for(int i=0;i<n;i++){
+            System.out.print(" "+pref[i]+" ");
+        }
+        
+        
+        
+    }
+}
