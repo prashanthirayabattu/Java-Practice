@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class prash {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the size of the array:");
+        int n = sc.nextInt();
+
+        // n+1 because we are using 1-based indexing
+        int[] a = new int[n + 1];
+
+        System.out.println("Enter the array elements:");
+        for (int i = 1; i <= n; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter the left range:");
+        int l = sc.nextInt();
+
+        System.out.println("Enter the right range:");
+        int r = sc.nextInt();
+
+        int sum = 0;
+
+        for (int i = l; i <= r; i++) {
+            sum += a[i];
+        }
+
+        System.out.println("Sum = " + sum);
+
+        sc.close();
+    }
+}
