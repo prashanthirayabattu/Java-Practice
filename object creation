@@ -1,0 +1,15 @@
+class Student {
+
+    void display() {
+        System.out.println("Hello");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Student obj = new Student(); // Object creation
+
+        obj.display(); // Method call
+    }
+}
