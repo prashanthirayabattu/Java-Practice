@@ -1,0 +1,20 @@
+class Mobile {
+
+    void call() {
+        System.out.println("Calling...");
+    }
+
+    void message() {
+        System.out.println("Sending Message...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Mobile phone = new Mobile();   // Object creation
+
+        phone.call();
+        phone.message();
+    }
+}
