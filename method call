@@ -1,0 +1,15 @@
+class Car {
+
+    void start() {
+        System.out.println("Car Started");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Car myCar = new Car();   // Object creation
+
+        myCar.start();           // Method call
+    }
+}
