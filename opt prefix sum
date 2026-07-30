@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter size: ");
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+        int[] pre = new int[n];
+
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Build Prefix Sum
+        pre[0] = arr[0];
+        for (int i = 1; i < n; i++) {
+            pre[i] = pre[i - 1] + arr[i];
+        }
+
+        System.out.print("Enter Left Index: ");
+        int L = sc.nextInt();
+
+        System.out.print("Enter Right Index: ");
+        int R = sc.nextInt();
+
+        int sum;
+        if (L == 0) {
+            sum = pre[R];
+        } else {
+            sum = pre[R] - pre[L - 1];
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
