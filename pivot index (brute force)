@@ -1,0 +1,27 @@
+import java.util.*;
+public class pivot {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+            int l = 0;
+            int r = 0;
+            // Calculate left sum
+            for (int j = 0; j < i; j++) {
+                l += a[j];
+            }for (int k = i + 1; k < n; k++) {
+                r += a[k];
+            } if (l == r) {
+                System.out.println("Pivot Index = " + i);
+                return;
+            }
+        }
+        System.out.println("Pivot Index = -1");
+    }
+}
